@@ -37,7 +37,7 @@ img {
 }
 
 .shine-button,
-.shine-button::hover {
+.shine-button:hover {
     font-size: 1em;
     padding: 10px 20px;
     margin: 5px;
