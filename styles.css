@@ -48,14 +48,13 @@ img {
     background-color: #404040;
     color: #ffffff;
     display: block;
-    width: 100%;
+    width: 25px;
     text-align: center;
     text-decoration: none;
 }
 
 .shine-button + .shine-button {
     margin-top: 15px;
-    width: 10px;
 }
 
 .shine-button::before {
