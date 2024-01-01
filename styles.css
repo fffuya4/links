@@ -48,7 +48,7 @@ img {
     background-color: #404040;
     color: #ffffff;
     display: block;
-    width: 25px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
 }
