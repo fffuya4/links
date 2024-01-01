@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://raw.githubusercontent.com/liluzg/links/main/pp.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="styles.css">
+    <title>lil_uzg</title>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img id="profileImage" src="https://raw.githubusercontent.com/liluzg/links/main/pp.jpg" alt="Profil Fotoğrafı" onclick="toggleEnlarged()">
+        <p class="profile-name">lil_uzg</p>
+        <p class="custom-text">Bu metni özelleştirin</p>
+
+        <div class="button-container">
+            <button class="shine-button" id="discordButton" onclick="showDiscordAlert()">Discord</button>
+            <button class="shine-button" onclick="window.open('https://instagram.com/lil_uzg', '_blank')">Instagram</button>
+            <button class="shine-button" onclick="window.open('https://github.com/liluzg', '_blank')">GitHub</button>
+            <button class="shine-button" onclick="window.open('https://steamcommunity.com/id/lil_uzg/', '_blank')">Steam</button>
+            <button class="shine-button" onclick="window.open('https://www.youtube.com/@liluzg', '_blank')">YouTube</button>
+            <button class="shine-button" onclick="window.open('https://open.spotify.com/user/qg2ulfmo9wlyldiyq3t81ozhf?si=1CNbZs9BRwCYTbngcn6SAw&utm_source=copy-link&nd=1&dlsi=03e266b041444396', '_blank')">Spotify</button>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

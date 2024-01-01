@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://raw.githubusercontent.com/liluzg/links/main/background.jpg') center/cover no-repeat;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#profileImage {
+    height: 150px;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.custom-text {
+    font-size: 1.4em;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.shine-button,
+.shine-button:hover {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    background-color: #404040;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.shine-button + .shine-button {
+    margin-top: 15px;
+}
+
+.shine-button::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #4a4aff, #9900cc, #4a4aff, #9900cc);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.shine-button:hover::before {
+    opacity: 1;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.enlarged {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3.5);
+    border-radius: 10px;
+    z-index: 3;
+    animation: enlarge 0.5s ease-in-out forwards;
+}
+
+@keyframes enlarge {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(3.5);
+    }
+}
+
